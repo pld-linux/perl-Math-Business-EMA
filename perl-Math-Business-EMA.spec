@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Math
-%define	pnam	Business-EMA
+%define		pdir	Math
+%define		pnam	Business-EMA
 Summary:	Math::Business::EMA - Perl extension for calculating EMAs
 Summary(pl):	Math::Business::EMA - rozszerzenie Perla do obliczania EMA
 Name:		perl-Math-Business-EMA
