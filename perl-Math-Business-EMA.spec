@@ -9,13 +9,13 @@ Summary:	Math::Business::EMA - Perl extension for calculating EMAs
 Summary(pl):	Math::Business::EMA - rozszerzenie Perla do obliczania EMA
 Name:		perl-Math-Business-EMA
 Version:	1.06
-Release:	1
+Release:	2
 License:	unknown
 Vendor:		Jettero Heller <jettero@cpan.org>
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{?_without_tests:0}%{!?_without_tests:1}
 BuildRequires:	perl-Math-Business-SMA >= 0.99
 %endif
@@ -32,7 +32,8 @@ Math::Business::EMA - rozszerzenie Perla do obliczania EMA.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %{!?_without_tests:%{__make} test}
@@ -49,5 +50,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes
-%{perl_sitelib}/Math/Business/EMA.pm
+%{perl_vendorlib}/Math/Business/EMA.pm
 %{_mandir}/man3/*
