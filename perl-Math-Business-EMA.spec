@@ -32,7 +32,7 @@ Math::Business::EMA - rozszerzenie Perla do obliczania EMA.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 
 %{!?_without_tests:%{__make} test}
