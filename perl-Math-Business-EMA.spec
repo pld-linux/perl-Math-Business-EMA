@@ -34,7 +34,7 @@ Math::Business::EMA - rozszerzenie Perla do obliczania EMA.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %{!?_without_tests:%{__make} test}
