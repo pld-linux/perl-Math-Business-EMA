@@ -11,6 +11,7 @@ Name:		perl-Math-Business-EMA
 Version:	1.05
 Release:	1
 License:	unknown
+Vendor:		Jettero Heller <jettero@cpan.org>
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
