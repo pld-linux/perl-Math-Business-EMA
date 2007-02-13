@@ -6,7 +6,7 @@
 %define		pdir	Math
 %define		pnam	Business-EMA
 Summary:	Math::Business::EMA - Perl extension for calculating EMAs
-Summary(pl.UTF-8):   Math::Business::EMA - rozszerzenie Perla do obliczania EMA
+Summary(pl.UTF-8):	Math::Business::EMA - rozszerzenie Perla do obliczania EMA
 Name:		perl-Math-Business-EMA
 Version:	1.08
 Release:	1
