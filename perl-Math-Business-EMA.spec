@@ -1,20 +1,20 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Math
 %define		pnam	Business-EMA
+%include	/usr/lib/rpm/macros.perl
 Summary:	Math::Business::EMA - Perl extension for calculating EMAs
 Summary(pl.UTF-8):	Math::Business::EMA - rozszerzenie Perla do obliczania EMA
 Name:		perl-Math-Business-EMA
 Version:	1.08
 Release:	2
 License:	unknown
-Vendor:		Jettero Heller <jettero@cpan.org>
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	5b723fd740392d9d5f0b90042e26b802
+URL:		http://search.cpan.org/dist/Math-Business-EMA/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
