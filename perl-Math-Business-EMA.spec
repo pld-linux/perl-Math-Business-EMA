@@ -4,7 +4,6 @@
 
 %define		pdir	Math
 %define		pnam	Business-EMA
-%include	/usr/lib/rpm/macros.perl
 Summary:	Math::Business::EMA - Perl extension for calculating EMAs
 Summary(pl.UTF-8):	Math::Business::EMA - rozszerzenie Perla do obliczania EMA
 Name:		perl-Math-Business-EMA
