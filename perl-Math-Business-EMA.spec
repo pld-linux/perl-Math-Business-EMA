@@ -8,7 +8,7 @@ Summary:	Math::Business::EMA - Perl extension for calculating EMAs
 Summary(pl.UTF-8):	Math::Business::EMA - rozszerzenie Perla do obliczania EMA
 Name:		perl-Math-Business-EMA
 Version:	1.08
-Release:	2
+Release:	3
 License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
